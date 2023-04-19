@@ -9,6 +9,13 @@ public class _Optional {
     public static void main(String[] args) {
         Optional<Integer> i = Optional.ofNullable(954654511);
 
+        Optional<Object> o = Optional.of(null);
+//        System.out.println(o.isPresent());
+
+        Optional<Object> empty = Optional.empty();
+//        System.out.println(empty.isEmpty());
+//        System.out.println(empty.isPresent());
+
 //        throw exception if value is not present
 //        Integer value_is_null = i.orElseThrow();
 
@@ -35,7 +42,7 @@ public class _Optional {
 //        System.out.println(i.isEmpty());
 
 //        checks whether value is present if not add some logic with the help of runnable interface
-        i.ifPresentOrElse(x -> System.out.println(x), () -> System.out.println(100));
+//        i.ifPresentOrElse(x -> System.out.println(x), () -> System.out.println(100));
 
 //        checks whether is present or not if present ".get()" method gets the value
 //        if(i.isPresent()) System.out.println(i.get());
