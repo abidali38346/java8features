@@ -46,26 +46,41 @@ public class newClass {
     }
 
     public static void main(String[] args) {
-        String input1 = "1G5A6B";
-        int input2 = 3;
-        String output = transfromString(input1, input2);
-        System.out.println(output);
+//        String input1 = "1G5A6B";
+//        int input2 = 3;
+//        String output = transfromString(input1, input2);
+//        System.out.println(output);
+//
+//        input1 = "1G5H10J";
+//        input2 = 5;
+//        output = transfromString(input1, input2);
+//        System.out.println(output);
+//
+//        input1 = "1G6H9C";
+//        input2 = 2;
+//        output = transfromString(input1, input2);
+//        System.out.println(output);
+//
+//        input1 = "8K10G12B";
+//        input2 = 4;
+//        output = transfromString(input1, input2);
+//        System.out.println(output);
 
-        input1 = "1G5H10J";
-        input2 = 5;
-        output = transfromString(input1, input2);
-        System.out.println(output);
+        String string = reverseString("abc");
+        System.out.println(string);
 
-        input1 = "1G6H9C";
-        input2 = 2;
-        output = transfromString(input1, input2);
-        System.out.println(output);
+    }
 
-        input1 = "8K10G12B";
-        input2 = 4;
-        output = transfromString(input1, input2);
-        System.out.println(output);
+    private static String reverseString(String str) {
+//        var ans = "";
+//        for (int i = str.length() - 1; i >= 0; i--) {
+//            ans += str.charAt(i);
+//        }
+//        return ans;
 
+//      recursive way
+        if (str.length() == 1) return str;
+        return str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
     }
 
 }

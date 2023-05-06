@@ -1,15 +1,14 @@
 package febBatch.StaticAndDefault;
 
-import decBatch.stremas.Customers;
 import decBatch.stremas.Employee;
 import febBatch.StaticData;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public interface StaticAndDefaultInterface {
+public interface StaticAndDefaultInterface<T> {
+
+    public String returnStr(String s);
 
     // java 8 introduced static and default methods in interface
     // so that we can handle the multiple inheritance problem
@@ -88,6 +87,15 @@ public interface StaticAndDefaultInterface {
 
         employees1.add(emp);
         return employees1;
+    }
+
+
+    // with generics
+    default int byIdByGenerics(List<T> data) {
+        for (T d : data) {
+            System.out.println(d);
+        }
+        return 0;
     }
 
 

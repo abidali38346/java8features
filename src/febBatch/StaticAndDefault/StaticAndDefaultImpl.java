@@ -15,4 +15,8 @@ public class StaticAndDefaultImpl implements StaticAndDefaultInterface {
 
     }
 
+    @Override
+    public String returnStr(String s) {
+        return s;
+    }
 }
