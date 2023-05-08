@@ -15,7 +15,12 @@ public class StringProblems {
 //        return ans;
 
 //      recursive approach
-        if (str.length() == 1) return str;
-        return str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
+
+//        if (str.length() == 1) return str;
+//        return str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
+
+//        single liner
+        return str.length() == 1 ? str : str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
+
     }
 }

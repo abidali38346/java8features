@@ -11,7 +11,7 @@ public interface StaticAndDefaultInterface<T> {
     public String returnStr(String s);
 
     // java 8 introduced static and default methods in interface
-    // so that we can handle the multiple inheritance problem
+        // so that we can handle the multiple inheritance problem
 
     // static method:-
     // we can add default implementation so that we can force developer not to override the implementation

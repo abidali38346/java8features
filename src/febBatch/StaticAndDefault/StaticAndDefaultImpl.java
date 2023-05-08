@@ -6,7 +6,7 @@ public class StaticAndDefaultImpl implements StaticAndDefaultInterface {
     public static void main(String[] args) {
         // invoking static method
         int add = StaticAndDefaultInterface.add(11, 19);
-//       System.out.println(add);
+       System.out.println(add);
 
         // invoking default method
         StaticAndDefaultInterfaceImpl ss = new StaticAndDefaultInterfaceImpl();

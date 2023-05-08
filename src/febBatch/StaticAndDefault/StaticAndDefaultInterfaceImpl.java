@@ -24,7 +24,6 @@ public class StaticAndDefaultInterfaceImpl implements StaticAndDefaultInterface 
 
         StaticData data = new StaticData();
         StaticAndDefaultInterfaceImpl staticAndDefaultInterface = new StaticAndDefaultInterfaceImpl();
-//        int employeeByIdByGenerics = staticAndDefaultInterface.findEmployeeByIdByGenerics(12345, data.employeesData());
         int employeeByIdByGenerics = staticAndDefaultInterface.byIdByGenerics(data.studentsData());
 //        System.out.println(employeeByIdByGenerics);
 
