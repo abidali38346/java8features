@@ -1,4 +1,4 @@
-package febBatch.FunctionalInterfaces;
+package febBatch.Lambda;
 
 public class _LamdaExpression {
     public static void main(String[] args) {
